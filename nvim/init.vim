@@ -61,6 +61,7 @@ set clipboard=unnamedplus
 set autochdir
 colorscheme dracula
 set termguicolors
+set mouse=nv
 
 "líder
 let mapleader = "\<space>"
@@ -88,6 +89,10 @@ nnoremap <leader>ev :edit ~/.config/nvim/init.vim<cr>
 "salva com ctrl+s
 nnoremap <C-s> :w<CR>
 
+"colar da última cópia
+nnoremap ,p "0p
+nnoremap ,P "0P
+
 "startify
 nnoremap <leader>s :Startify<cr>
 
@@ -101,7 +106,7 @@ endif
 autocmd! bufwritepost init.vim source %
 
 "cancela o destaque da busca
-nnoremap <silent> <C-l> :nohl<CR>
+nnoremap <silent> <leader>l :nohl<CR>
 
 "coc
 inoremap <silent><expr> <TAB>
@@ -139,7 +144,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "explorer
-nmap <leader>z :CocCommand explorer<CR>
+nmap <leader>z :CocCommand explorer --quit-on-open --position right<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 let g:coc_explorer_global_presets = {
 \   'home': {
@@ -242,6 +247,6 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
 	\ { 'i': '~/.config/nvim/init.vim' },
 	\ { 'b': '~/.bashrc' },
-	\ '~/snap/exercism/5/exercism/go/',
+	\ { 'g': '~/snap/exercism/5/exercism/go/' },
 	\ ]
 let g:startify_session_dir = '~/.config/nvim/session'
