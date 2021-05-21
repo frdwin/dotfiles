@@ -120,7 +120,6 @@ function! s:check_back_space() abort
   return !col || getline('.')[col - 1]  =~# '\s'
 endfunction
 
-"K para mostrar documentação
 nnoremap <silent> K :call <SID>show_documentation()<CR>
 function! s:show_documentation()
   if (index(['vim','help'], &filetype) >= 0)
@@ -136,6 +135,9 @@ nnoremap <silent><nowait> <leader>d :CocDiagnostics<cr>
 nmap <silent> [g <Plug>(coc-diagnostic-prev)
 nmap <silent> ]g <Plug>(coc-diagnostic-next)
 nmap <silent> gd <Plug>(coc-definition)
+autocmd FileType go nmap gtj :CocCommand go.tags.add json<cr>
+autocmd FileType go nmap gty :CocCommand go.tags.add yaml<cr>
+autocmd FileType go nmap gtx :CocCommand go.tags.clear<cr>
 nmap <leader>rn <Plug>(coc-rename)
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
@@ -186,6 +188,7 @@ autocmd FileType go nmap <buffer> <leader>b <plug>(go-build)
 autocmd FileType go nmap <buffer> <leader>t <plug>(go-test)
 autocmd FileType go nmap <buffer> <leader>i <plug>(go-info)
 autocmd FileType go nmap <buffer> <leader>l <plug>(go-lint)
+autocmd FileType go vmap <buffer> gp :GoPlay<cr>
 set autowrite
 let g:go_fmt_command = "goimports"
 let g:go_highlight_build_constraints = 1
