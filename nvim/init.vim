@@ -106,7 +106,7 @@ endif
 autocmd! bufwritepost init.vim source %
 
 "cancela o destaque da busca
-nnoremap <silent> <leader>l :nohl<CR>
+nnoremap <silent> <C-l> :nohl<CR>
 
 "coc
 inoremap <silent><expr> <TAB>
