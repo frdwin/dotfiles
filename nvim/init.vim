@@ -250,6 +250,6 @@ let g:startify_lists = [
 let g:startify_bookmarks = [
 	\ { 'i': '~/.config/nvim/init.vim' },
 	\ { 'b': '~/.bashrc' },
-	\ { 'g': '~/snap/exercism/5/exercism/go/' },
+	\ { 'g': '~/exercism/go' },
 	\ ]
 let g:startify_session_dir = '~/.config/nvim/session'
