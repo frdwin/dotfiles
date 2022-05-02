@@ -15,7 +15,7 @@ Plug 'SirVer/ultisnips'
 Plug 'mhinz/vim-startify'
 Plug 'jiangmiao/auto-pairs'
 Plug 'unblevable/quick-scope'
-Plug 'dracula/vim',{'as':'dracula'}
+Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-commentary'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
@@ -59,7 +59,7 @@ set timeoutlen=500
 set formatoptions-=cro
 set clipboard=unnamedplus
 set autochdir
-colorscheme dracula
+colorscheme nord
 set termguicolors
 set mouse=nv
 
@@ -146,7 +146,7 @@ inoremap <silent><expr> <cr> pumvisible() ? coc#_select_confirm()
                               \: "\<C-g>u\<CR>\<c-r>=coc#on_enter()\<CR>"
 
 "explorer
-nmap <leader>z :CocCommand explorer --quit-on-open --position right<CR>
+nmap <leader>z :CocCommand explorer --quit-on-open --position left<CR>
 autocmd BufEnter * if (winnr("$") == 1 && &filetype == 'coc-explorer') | q | endif
 let g:coc_explorer_global_presets = {
 \   'home': {
@@ -249,7 +249,6 @@ let g:startify_lists = [
 	\ ]
 let g:startify_bookmarks = [
 	\ { 'i': '~/.config/nvim/init.vim' },
-	\ { 'b': '~/.bashrc' },
-	\ { 'g': '~/exercism/go' },
+	\ { 'f': '~/.config/fish/config.fish' },
 	\ ]
 let g:startify_session_dir = '~/.config/nvim/session'
