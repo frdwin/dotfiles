@@ -41,10 +41,10 @@ return {
 
 	-- Padding
 	window_padding = {
-		left = '3%',
-		right = '3%',
+		left = '1%',
+		right = '1%',
 		top = '3%',
-		bottom = '3%',
+		bottom = '3%'
 	}
 
 }
