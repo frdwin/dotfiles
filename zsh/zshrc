@@ -1,0 +1,11 @@
+# starship initialization
+eval "$(starship init zsh)"
+
+# aliases
+alias ls="exa --icons"
+alias cat="batcat --theme 'gruvbox-dark'"
+alias grep="ripgrep -n --color"
+alias vi="$HOME/.config/nvim/nvim.appimage"
+alias vim="$HOME/.config/nvim/nvim.appimage"
+alias nvim="$HOME/.config/nvim/nvim.appimage"
+alias wezterm="flatpak run org.wezfurlong.wezterm"

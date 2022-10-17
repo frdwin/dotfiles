@@ -27,7 +27,7 @@ return {
 	--font = wezterm.font 'Iosevka',
 
 	-- Colorscheme
-	color_scheme = 'Monokai Soda',
+	color_scheme = 'Gruvbox dark, medium (base16)',
 
 	-- Tab and pane
 	hide_tab_bar_if_only_one_tab = true,
