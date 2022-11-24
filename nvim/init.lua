@@ -1,0 +1,6 @@
+require('mappings')
+require('settings')
+require('plugins.packer')
+require('plugins.lualine')
+require('plugins.startify')
+require('colors.gruvbox')
