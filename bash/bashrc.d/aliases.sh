@@ -9,3 +9,8 @@ alias vim='nvim'
 alias ls='exa --icons'
 alias grep='rg --color always -n'
 alias cat='bat --theme "gruvbox-dark"'
+
+# General
+#
+alias mv='mv -v'
+alias rm='rm -v'
