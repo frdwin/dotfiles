@@ -29,6 +29,7 @@ set.autochdir = true
 set.mouse = 'nv'
 set.foldcolumn = '0'
 set.signcolumn = 'no'
+set.termguicolors = true
 
 -- Autoload nvim lua config file on save
 --autocmd('BufWritePost', {

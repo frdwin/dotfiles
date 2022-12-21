@@ -1,5 +1,5 @@
-#env:
-#  TERM: alacritty
+env:
+  TERM: xterm-256color
 
 window:
   dimensions:
@@ -77,6 +77,13 @@ colors:
     magenta: '#AD7FA8'
     cyan:    '#34E2E2'
     white:   '#EEEEEC'
+
+shell:
+  program: /usr/bin/tmux
+  args:
+    - attach
+    - -t
+    - default
 
   # Cursor colors
   #
