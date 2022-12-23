@@ -79,11 +79,7 @@ colors:
     white:   '#EEEEEC'
 
 shell:
-  program: /usr/bin/tmux
-  args:
-    - attach
-    - -t
-    - default
+  program: /home/fw/Files/Configuration/tmux/tmux-init.sh
 
   # Cursor colors
   #
