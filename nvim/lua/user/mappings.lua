@@ -20,14 +20,20 @@ map('n', '<C-h>', '<C-w>h', opts)
 map('n', '<C-k>', '<C-w>k', opts)
 map('n', '<C-l>', '<C-w>l', opts)
 
-map('n', '<up>', ':resize +5<CR>', opts)
-map('n', '<down>', ':resize -5<CR>', opts)
-map('n', '<left>', ':vertical resize -5<CR>', opts)
-map('n', '<right>', ':vertical resize +5<CR>', opts)
+map('n', '<up>', ':resize +2<CR>', opts)
+map('n', '<down>', ':resize -2<CR>', opts)
+map('n', '<left>', ':vertical resize -2<CR>', opts)
+map('n', '<right>', ':vertical resize +2<CR>', opts)
 
 map('n', '<tab>', ':bn<CR>', opts)
 map('n', '<s-tab>', ':bp<CR>', opts)
 map('n', '<leader>q', ':bd<CR>', opts)
+
+map('n', '<leader>e', ':Lex 30<CR>', opts)
+
+-- Move text up and down on visual mode
+map('x', 'J', ":move '>+1<CR>gv-gv", opts)
+map('x', 'K', ":move '<-2<CR>gv-gv", opts) 
 
 -- Cancel search highlight
 map('n', '<leader><Esc>', ':nohl<CR>', opts)

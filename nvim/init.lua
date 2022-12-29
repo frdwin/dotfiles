@@ -1,6 +1,6 @@
-require('mappings')
-require('settings')
-require('plugins.packer')
-require('plugins.lualine')
-require('plugins.startify')
-require('colors.gruvbox')
+require 'user.mappings'
+require 'user.settings'
+require 'user.plugins.packer'
+require 'user.plugins.lualine'
+require 'user.plugins.startify'
+require 'user.colors.gruvbox'
