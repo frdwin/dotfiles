@@ -69,6 +69,9 @@ return packer.startup(function(use)
 
 		-- Comments
 		"numToStr/Comment.nvim",
+
+		-- NvimTree
+		{ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" }},
 	}
 
 	-- Sync plugins after packer installation

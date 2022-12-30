@@ -29,7 +29,7 @@ map('n', '<tab>', ':bn<CR>', opts)
 map('n', '<s-tab>', ':bp<CR>', opts)
 map('n', '<leader>q', ':bd<CR>', opts)
 
-map('n', '<leader>e', ':Lex 30<CR>', opts)
+map('n', '<leader>e', ':NvimTreeToggle<CR>', opts)
 
 -- Move text up and down on visual mode
 map('x', 'J', ":move '>+1<CR>gv-gv", opts)
