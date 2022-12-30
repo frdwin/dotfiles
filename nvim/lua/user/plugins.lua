@@ -57,7 +57,7 @@ return packer.startup(function(use)
 		"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
-		"RRethy/vim-illuminate",
+		--"RRethy/vim-illuminate",
 		{ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" },
 
 		-- Autopairs
@@ -65,6 +65,10 @@ return packer.startup(function(use)
 
 		-- Treesitter
 		{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
+		"p00f/nvim-ts-rainbow",
+
+		-- Comments
+		"numToStr/Comment.nvim",
 	}
 
 	-- Sync plugins after packer installation

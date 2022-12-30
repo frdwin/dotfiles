@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 configs.setup({
-  ensure_installed = { "bash", "python", "lua", "rust", "go" }, -- or all
+	ensure_installed = { "bash", "python", "lua", "rust", "go" }, -- or all
 	ignore_install = { "phpdoc" },
 	auto_install = true,
 	highlight = {
@@ -15,4 +15,9 @@ configs.setup({
 		enable = true,
 	},
 	indent = { enable = true, disable = { "css" } },
+	rainbow = {
+		enable = true,
+		extended_mode = true,
+		max_file_lines = nil,
+	}
 })
