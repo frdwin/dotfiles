@@ -36,7 +36,7 @@ map('x', 'J', ":move '>+1<CR>gv-gv", opts)
 map('x', 'K', ":move '<-2<CR>gv-gv", opts) 
 
 -- Cancel search highlight
-map('n', '<leader>;', ':nohl<CR>', opts)
+map('n', '<leader>h', ':nohl<CR>', opts)
 -- Paste from last copy
 map('n', ',p', '"0p', opts)
 map('n', ',P', '"0P', opts)

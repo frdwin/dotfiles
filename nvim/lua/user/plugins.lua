@@ -19,26 +19,44 @@ end
 vim.cmd [[
 	augroup packer_user_config
 		autocmd!
-		autocmd BufWritePost packer.lua source <afile> | PackerSync
+		autocmd BufWritePost plugins.lua source <afile> | PackerSync
 	augroup end
 ]]
 
 -- Check if packer loading was ok
 local status_ok, packer = pcall(require, "packer")
 if not status_ok then
+	vim.notify("error loading packer!")
 	return
 end
 
 -- Plugins
 return packer.startup(function(use)
-	use 'wbthomason/packer.nvim'
 	use {
-		'nvim-lualine/lualine.nvim',
-		requires = { 'kyazdani42/nvim-web-devicons', opt = true }
+		"wbthomason/packer.nvim",
+
+		-- Lualine
+		{ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true }},
+
+		-- Colorscheme
+		"lunarvim/colorschemes",
+		
+		-- Auto-Completion
+		"hrsh7th/nvim-cmp",
+		"hrsh7th/cmp-buffer",
+		"hrsh7th/cmp-path",
+		"hrsh7th/cmp-cmdline",
+		"hrsh7th/cmp-nvim-lsp",
+		"saadparwaiz1/cmp_luasnip",
+
+		-- Snippets
+		"L3MON4D3/LuaSnip",
+		"rafamadriz/friendly-snippets",
+
+		-- LSP
+		"neovim/nvim-lspconfig",
+		"williamboman/nvim-lsp-installer",
 	}
-	use 'mhinz/vim-startify'
-	use { 'jzelinskie/monokai-soda.vim', requires = 'tjdevries/colorbuddy.vim' }
-	use 'morhetz/gruvbox'
 
 	-- Sync plugins after packer installation
 	if PACKER_BOOTSTRAP then
