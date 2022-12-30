@@ -40,7 +40,7 @@ return packer.startup(function(use)
 
 		-- Colorscheme
 		"lunarvim/colorschemes",
-		
+
 		-- Auto-Completion
 		"hrsh7th/nvim-cmp",
 		"hrsh7th/cmp-buffer",
@@ -55,7 +55,16 @@ return packer.startup(function(use)
 
 		-- LSP
 		"neovim/nvim-lspconfig",
-		"williamboman/nvim-lsp-installer",
+		"williamboman/mason.nvim",
+		"williamboman/mason-lspconfig.nvim",
+		"RRethy/vim-illuminate",
+		{ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" },
+
+		-- Autopairs
+		"windwp/nvim-autopairs",
+
+		-- Treesitter
+		{ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" },
 	}
 
 	-- Sync plugins after packer installation
