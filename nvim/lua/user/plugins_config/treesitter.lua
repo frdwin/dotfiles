@@ -6,6 +6,7 @@ end
 configs.setup({
   ensure_installed = { "bash", "python", "lua", "rust", "go" }, -- or all
 	ignore_install = { "phpdoc" },
+	auto_install = true,
 	highlight = {
 		enable = true,
 		disable = { "css" },
