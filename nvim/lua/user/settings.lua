@@ -10,8 +10,8 @@ local options = {
 	hidden = true,
 	backup = false,
 	writebackup = false,
-	encoding = 'utf-8',
-	fileencoding = 'utf-8',
+	encoding = "utf-8",
+	fileencoding = "utf-8",
 	pumheight = 10,
 	cmdheight = 2,
 	expandtab = false,
@@ -25,14 +25,14 @@ local options = {
 	autoindent = true,
 	laststatus = 0,
 	cursorline = true,
-	background = 'dark',
+	background = "dark",
 	showmode = false,
 	updatetime = 300,
 	timeoutlen = 500,
 	autochdir = true,
-	mouse = 'nv',
+	mouse = "nv",
 	termguicolors = true,
-	clipboard = 'unnamedplus',
+	clipboard = "unnamedplus",
 	showtabline = 2,
 	swapfile = false,
 	undofile = true,
@@ -43,3 +43,11 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
+
+-- Format on save
+vim.cmd([[
+	augroup _auto_formatting
+		autocmd!
+		autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
+	augroup end
+]])
