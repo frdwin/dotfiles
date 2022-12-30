@@ -44,6 +44,3 @@ map("n", "<leader>h", ":nohl<CR>", opts)
 -- Paste from last copy
 map("n", ",p", '"0p', opts)
 map("n", ",P", '"0P', opts)
-
--- Startify
-map("n", "<leader>s", ":Startify<CR>", opts)
