@@ -1,27 +1,27 @@
 local fn = vim.fn
 
 -- Automatically install packer
-local install_path = fn.stdpath "data" .. "/site/pack/packer/start/packer.nvim"
+local install_path = fn.stdpath("data") .. "/site/pack/packer/start/packer.nvim"
 if fn.empty(fn.glob(install_path)) > 0 then
-	PACKER_BOOTSTRAP = fn.system {
+	PACKER_BOOTSTRAP = fn.system({
 		"git",
 		"clone",
 		"--depth",
 		"1",
 		"https://github.com/wbthomason/packer.nvim",
 		install_path,
-	}
-	print "Installing packer... Close and reopen Neovim."
-	vim.cmd [[packadd packer.nvim]]
+	})
+	print("Installing packer... Close and reopen Neovim.")
+	vim.cmd([[packadd packer.nvim]])
 end
 
 -- Autocommand to reload nvim whenever packer.lua file is saved
-vim.cmd [[
+vim.cmd([[
 	augroup packer_user_config
 		autocmd!
 		autocmd BufWritePost plugins.lua source <afile> | PackerSync
 	augroup end
-]]
+]])
 
 -- Check if packer loading was ok
 local status_ok, packer = pcall(require, "packer")
@@ -32,11 +32,11 @@ end
 
 -- Plugins
 return packer.startup(function(use)
-	use {
+	use({
 		"wbthomason/packer.nvim",
 
 		-- Lualine
-		{ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true }},
+		{ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } },
 
 		-- Colorscheme
 		"lunarvim/colorschemes",
@@ -71,8 +71,11 @@ return packer.startup(function(use)
 		"numToStr/Comment.nvim",
 
 		-- NvimTree
-		{ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" }},
-	}
+		{ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } },
+
+		-- Terminal
+		"akinsho/toggleterm.nvim",
+	})
 
 	-- Sync plugins after packer installation
 	if PACKER_BOOTSTRAP then
