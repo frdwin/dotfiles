@@ -45,9 +45,3 @@ local options = {
 for k, v in pairs(options) do
 	vim.opt[k] = v
 end
-
--- Autoload nvim lua config file on save
---autocmd('BufWritePost', {
---pattern = '*/.config/nvim/**/*.lua',
---command = 'luafile %'
---})
