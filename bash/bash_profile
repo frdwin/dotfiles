@@ -9,3 +9,4 @@ fi
 #
 # Fix Alacritty title bar
 export WINIT_UNIX_BACKEND=x11
+export PATH="$HOME/.cargo/bin:$PATH"
