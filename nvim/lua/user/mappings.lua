@@ -12,7 +12,7 @@ map("n", ";", ":", opts)
 map("v", ";", ":", opts)
 
 -- Save on Ctrl+S
-map("n", "<C-s>", ":Format<CR> :w<CR>", opts)
+map("n", "<C-s>", ":w<CR>", opts)
 
 -- Navigation
 map("n", "<C-j>", "<C-w>j", opts)
