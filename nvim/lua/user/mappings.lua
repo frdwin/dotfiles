@@ -48,4 +48,4 @@ map("n", ",P", '"0P', opts)
 
 -- Telescope
 map("n", "<leader>f", ":Telescope find_files theme=ivy<CR>", opts)
-map("n", "<leader>g", ":Telescope live_grep theme=ivy<CR>", opts)
+map("n", "<C-g>", ":Telescope live_grep theme=ivy<CR>", opts)
