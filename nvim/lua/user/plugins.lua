@@ -71,10 +71,13 @@ return packer.startup(function(use)
 		"numToStr/Comment.nvim",
 
 		-- NvimTree
-		{ "nvim-tree/nvim-tree.lua", requires = { "nvim-tree/nvim-web-devicons" } },
+		{ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" },
 
 		-- Terminal
 		"akinsho/toggleterm.nvim",
+
+		-- Telescope
+		{ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" },
 	})
 
 	-- Sync plugins after packer installation
