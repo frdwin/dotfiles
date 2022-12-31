@@ -78,6 +78,12 @@ return packer.startup(function(use)
 
 		-- Telescope
 		{ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" },
+
+		-- Bufferline
+		"akinsho/bufferline.nvim",
+
+		-- Illuminate
+		"RRethy/vim-illuminate",
 	})
 
 	-- Sync plugins after packer installation
