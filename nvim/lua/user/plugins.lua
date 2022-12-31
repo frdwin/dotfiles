@@ -39,7 +39,7 @@ return packer.startup(function(use)
 		{ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } },
 
 		-- Colorscheme
-		"lunarvim/colorschemes",
+		"sainnhe/everforest",
 
 		-- Auto-Completion
 		"hrsh7th/nvim-cmp",
@@ -57,7 +57,7 @@ return packer.startup(function(use)
 		"neovim/nvim-lspconfig",
 		"williamboman/mason.nvim",
 		"williamboman/mason-lspconfig.nvim",
-		--"RRethy/vim-illuminate",
+		"RRethy/vim-illuminate",
 		{ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" },
 
 		-- Autopairs
@@ -81,9 +81,6 @@ return packer.startup(function(use)
 
 		-- Bufferline
 		{ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" },
-
-		-- Illuminate
-		"RRethy/vim-illuminate",
 	})
 
 	-- Sync plugins after packer installation
