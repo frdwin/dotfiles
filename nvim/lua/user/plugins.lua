@@ -36,7 +36,7 @@ return packer.startup(function(use)
 		"wbthomason/packer.nvim",
 
 		-- Lualine
-		{ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons", opt = true } },
+		{ "nvim-lualine/lualine.nvim", requires = { "kyazdani42/nvim-web-devicons" } },
 
 		-- Colorscheme
 		"lunarvim/colorschemes",
@@ -80,7 +80,7 @@ return packer.startup(function(use)
 		{ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" },
 
 		-- Bufferline
-		"akinsho/bufferline.nvim",
+		{ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" },
 
 		-- Illuminate
 		"RRethy/vim-illuminate",
