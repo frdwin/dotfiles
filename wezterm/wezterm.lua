@@ -20,7 +20,7 @@ return {
 	}),
 
 	-- Colorscheme
-	color_scheme_dirs = { "colors" },
+	color_scheme_dirs = { "~/.config/wezterm/colors" },
 	color_scheme = "Everforest Dark (Medium)",
 
 	-- Key bindings
