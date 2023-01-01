@@ -20,6 +20,7 @@ return {
 	}),
 
 	-- Colorscheme
+	color_scheme_dirs = { "colors" },
 	color_scheme = "Everforest Dark (Medium)",
 
 	-- Key bindings
@@ -83,19 +84,7 @@ return {
 			timeout_milliseconds = 1000,
 		},
 		{
-			key = "h",
-			mods = "LEADER",
-			action = wa.ActivatePaneDirection("Left"),
-			timeout_milliseconds = 1000,
-		},
-		{
 			key = "RightArrow",
-			mods = "LEADER",
-			action = wa.ActivatePaneDirection("Right"),
-			timeout_milliseconds = 1000,
-		},
-		{
-			key = "l",
 			mods = "LEADER",
 			action = wa.ActivatePaneDirection("Right"),
 			timeout_milliseconds = 1000,
@@ -107,19 +96,7 @@ return {
 			timeout_milliseconds = 1000,
 		},
 		{
-			key = "k",
-			mods = "LEADER",
-			action = wa.ActivatePaneDirection("Up"),
-			timeout_milliseconds = 1000,
-		},
-		{
 			key = "DownArrow",
-			mods = "LEADER",
-			action = wa.ActivatePaneDirection("Down"),
-			timeout_milliseconds = 1000,
-		},
-		{
-			key = "j",
 			mods = "LEADER",
 			action = wa.ActivatePaneDirection("Down"),
 			timeout_milliseconds = 1000,
