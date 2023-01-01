@@ -1,3 +1,5 @@
+-- TODO:
+-- create everforest colorscheme
 local wez = require("wezterm")
 local wa = wez.action
 
@@ -18,7 +20,7 @@ return {
 	}),
 
 	-- Colorscheme
-	color_scheme = "Solarized Dark (base16)",
+	color_scheme = "Everforest Dark (Medium)",
 
 	-- Key bindings
 	leader = { key = "Space", mods = "CTRL", timeout_milliseconds = 1000 },
