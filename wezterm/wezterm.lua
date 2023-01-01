@@ -157,6 +157,23 @@ return {
 			mods = "CTRL|SHIFT",
 			action = wa.PasteFrom("Clipboard"),
 		},
+
+		-- Change font size
+		{
+			key = "=",
+			mods = "SUPER",
+			action = wa.IncreaseFontSize,
+		},
+		{
+			key = "-",
+			mods = "SUPER",
+			action = wa.DecreaseFontSize,
+		},
+		{
+			key = "0",
+			mods = "SUPER",
+			action = wa.ResetFontSize,
+		},
 	},
 
 	-- Key tables
@@ -176,6 +193,7 @@ return {
 
 	-- Window frame decoration
 	hide_tab_bar_if_only_one_tab = true,
+	adjust_window_size_when_changing_font_size = false,
 
 	-- Padding
 	window_padding = {
