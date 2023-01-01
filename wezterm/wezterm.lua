@@ -133,6 +133,18 @@ return {
 			mods = "ALT",
 			action = wa.ActivateTabRelative(1),
 		},
+
+		-- Scrolling
+		{
+			key = "PageUp",
+			mods = "SHIFT",
+			action = wa.ScrollByPage(-1),
+		},
+		{
+			key = "PageDown",
+			mods = "SHIFT",
+			action = wa.ScrollByPage(1),
+		},
 	},
 
 	-- Key tables
