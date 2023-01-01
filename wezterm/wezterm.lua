@@ -145,6 +145,18 @@ return {
 			mods = "SHIFT",
 			action = wa.ScrollByPage(1),
 		},
+
+		-- Copy and paste
+		{
+			key = "c",
+			mods = "CTRL|SHIFT",
+			action = wa.CopyTo("Clipboard"),
+		},
+		{
+			key = "v",
+			mods = "CTRL|SHIFT",
+			action = wa.PasteFrom("Clipboard"),
+		},
 	},
 
 	-- Key tables
@@ -161,4 +173,21 @@ return {
 
 	-- Disable default keybind
 	disable_default_key_bindings = true,
+
+	-- Window frame decoration
+	hide_tab_bar_if_only_one_tab = true,
+
+	-- Padding
+	window_padding = {
+		left = 15,
+		right = 15,
+		top = 15,
+		bottom = 15,
+	},
+
+	-- Opacity
+	window_background_opacity = 0.90,
+
+	-- Scrollback history
+	scrollback_lines = 10000,
 }
