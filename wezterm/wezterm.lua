@@ -183,7 +183,7 @@ return {
 	},
 
 	-- Opacity
-	window_background_opacity = 0.90,
+	--window_background_opacity = 0.90,
 
 	-- Scrollback history
 	scrollback_lines = 10000,
