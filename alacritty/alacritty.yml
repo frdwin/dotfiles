@@ -189,8 +189,8 @@ schemes:
 
 colors: *everforest_dark_medium
 
-#shell:
-#  program: /home/fw/Files/Configuration/tmux/tmux-init.sh
+shell:
+  program: /home/fw/Files/Configuration/tmux/tmux-init.sh
 
 selection:
   save_to_clipboard: true
