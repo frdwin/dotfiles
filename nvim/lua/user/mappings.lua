@@ -40,7 +40,7 @@ map("x", "J", ":move '>+1<CR>gv-gv", opts)
 map("x", "K", ":move '<-2<CR>gv-gv", opts)
 
 -- Cancel search highlight
-map("n", "<leader>h", ":nohl<CR>", silent_opts)
+map("n", "<C-h>", ":nohl<CR>", silent_opts)
 
 -- Paste from last copy
 map("n", ",p", '"0p', opts)
@@ -49,3 +49,8 @@ map("n", ",P", '"0P', opts)
 -- Telescope
 map("n", "<leader>f", ":Telescope find_files theme=ivy<CR>", opts)
 map("n", "<C-g>", ":Telescope live_grep theme=ivy<CR>", opts)
+
+-- Vim-go
+map("n", "<leader>r", ":GoRun<CR>", opts)
+map("n", "<leader>t", ":GoTest<CR>", opts)
+map("n", "<leader>gb", ":GoDocBrowser<CR>", opts)

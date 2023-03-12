@@ -81,6 +81,9 @@ return packer.startup(function(use)
 
 		-- Bufferline
 		{ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" },
+
+		-- Vim-go
+		{ "fatih/vim-go", run = ":GoUpdateBinaries" },
 	})
 
 	-- Sync plugins after packer installation
