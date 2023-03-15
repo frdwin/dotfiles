@@ -51,3 +51,11 @@ vim.cmd([[
 		autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
 	augroup end
 ]])
+
+-- Indent only 2 spaces on C files
+vim.cmd([[
+	augroup _filetype_c
+		autocmd!
+		autocmd FileType c setlocal tabstop=2 shiftwidth=2 softtabstop=2 expandtab
+	augroup end
+]])
