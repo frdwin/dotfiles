@@ -1,7 +1,7 @@
 require("user.plugins_config.lualine")
 require("user.plugins_config.cmp")
 require("user.plugins_config.treesitter")
-require("user.plugins_config.autopairs")
+--require("user.plugins_config.autopairs")
 require("user.plugins_config.comment")
 require("user.plugins_config.nvim-tree")
 require("user.plugins_config.toggleterm")

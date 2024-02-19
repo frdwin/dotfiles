@@ -1,5 +1,3 @@
--- TODO:
--- create everforest colorscheme
 local wez = require("wezterm")
 local wa = wez.action
 
@@ -20,7 +18,7 @@ return {
 	}),
 
 	-- Colorscheme
-	color_scheme_dirs = { "~/.config/wezterm/colors" },
+	color_scheme_dirs = { "~/dotfiles/wezterm/colors" },
 	color_scheme = "Everforest Dark (Medium)",
 
 	-- Key bindings

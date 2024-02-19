@@ -45,12 +45,12 @@ for k, v in pairs(options) do
 end
 
 -- Format on save
-vim.cmd([[
-	augroup _auto_formatting
-		autocmd!
-		autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
-	augroup end
-]])
+--vim.cmd([[
+--	augroup _auto_formatting
+--		autocmd!
+--		autocmd BufWritePre * lua vim.lsp.buf.formatting_sync()
+--	augroup end
+--]])
 
 -- Indent only 2 spaces on C files
 vim.cmd([[

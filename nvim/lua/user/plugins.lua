@@ -42,23 +42,23 @@ return packer.startup(function(use)
 		"sainnhe/everforest",
 
 		-- Auto-Completion
-		"hrsh7th/nvim-cmp",
-		"hrsh7th/cmp-buffer",
-		"hrsh7th/cmp-path",
-		"hrsh7th/cmp-cmdline",
-		"hrsh7th/cmp-nvim-lsp",
-		"saadparwaiz1/cmp_luasnip",
+		--"hrsh7th/nvim-cmp",
+		--"hrsh7th/cmp-buffer",
+		--"hrsh7th/cmp-path",
+		--"hrsh7th/cmp-cmdline",
+		--"hrsh7th/cmp-nvim-lsp",
+		--"saadparwaiz1/cmp_luasnip",
 
 		-- Snippets
-		"L3MON4D3/LuaSnip",
-		"rafamadriz/friendly-snippets",
+		--"L3MON4D3/LuaSnip",
+		--"rafamadriz/friendly-snippets",
 
 		-- LSP
-		"neovim/nvim-lspconfig",
-		"williamboman/mason.nvim",
-		"williamboman/mason-lspconfig.nvim",
-		"RRethy/vim-illuminate",
-		{ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" },
+		--"neovim/nvim-lspconfig",
+		--"williamboman/mason.nvim",
+		--"williamboman/mason-lspconfig.nvim",
+		--"RRethy/vim-illuminate",
+		--{ "jose-elias-alvarez/null-ls.nvim", requires = "nvim-lua/plenary.nvim" },
 
 		-- Autopairs
 		"windwp/nvim-autopairs",
@@ -74,7 +74,7 @@ return packer.startup(function(use)
 		{ "nvim-tree/nvim-tree.lua", requires = "nvim-tree/nvim-web-devicons" },
 
 		-- Terminal
-		"akinsho/toggleterm.nvim",
+		--"akinsho/toggleterm.nvim",
 
 		-- Telescope
 		{ "nvim-telescope/telescope.nvim", requires = "nvim-lua/plenary.nvim" },
@@ -83,7 +83,7 @@ return packer.startup(function(use)
 		{ "akinsho/bufferline.nvim", requires = "nvim-tree/nvim-web-devicons" },
 
 		-- Vim-go
-		{ "fatih/vim-go", run = ":GoUpdateBinaries" },
+		--{ "fatih/vim-go", run = ":GoUpdateBinaries" },
 	})
 
 	-- Sync plugins after packer installation
