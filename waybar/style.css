@@ -48,6 +48,13 @@ window#waybar {
 	opacity: 0.6;
 }
 
+/* Chevron */
+
+#custom-chevron {
+	color: alpha(@fg_grey2, 0.6);
+	margin-left: 15px;
+}
+
 /* Window title */
 
 #window {
