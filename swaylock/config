@@ -1,0 +1,61 @@
+#!/bin/bash
+# Swaylock Config
+# Frederico Winter (2024)
+# >_ fwinter
+
+# General
+ignore-empty-password
+clock
+timestr=%Rh
+datestr=%d/%m/%y
+
+# Background
+screenshots
+
+# Font
+font="JetBrains Mono"
+font-size="24"
+
+# Effects
+fade-in=1
+effect-blur=5x2
+effect-vignette=0.8:0.8
+
+# Indicator
+indicator
+indicator-radius=200
+indicator-caps-lock
+indicator-thickness=20
+
+# Everforest theme
+key-hl-color=A7C080
+separator-color=A7C080
+
+inside-color=232A2EAA
+inside-clear-color=232A2EAA
+inside-caps-lock-color=232A2EAA
+inside-ver-color=232A2EAA
+inside-wrong-color=232A2EAA
+
+ring-color=425047
+ring-clear-color=425047
+ring-caps-lock-color=425047
+ring-ver-color=425047
+ring-wrong-color=425047
+
+line-color=00000000
+line-clear-color=00000000
+line-caps-lock-color=00000000
+line-ver-color=00000000
+line-wrong-color=00000000
+
+text-color=D3C6AA
+text-clear-color=7FBBB3
+text-ver-color=D3C6AA
+text-wrong-color=E67E80
+
+bs-hl-color=DBBC7F
+caps-lock-key-hl-color=DBBC7F
+caps-lock-bs-hl-color=A7C080
+text-caps-lock-color=E69875
+
