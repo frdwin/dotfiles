@@ -1,5 +1,4 @@
 #!/bin/bash
-# Idle Lock Script
 # Frederico Winter (2024)
 # >_ fwinter
 

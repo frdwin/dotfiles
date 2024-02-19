@@ -13,9 +13,48 @@
 		"format": "{}",
 		"separate-outputs": true
 	},
+	"pulseaudio": {
+		"format": "{icon} {volume}%",
+		"format-muted": "{icon} muted",
+		"on-click": "pavucontrol",
+		"format-icons": {
+			"headphone": "",
+			"default": ""
+		}
+	},
+	"bluetooth": {
+		"format-on": " {num_connections} {status}",
+		"format-off": " {status}",
+		"interval": 30,
+		"on-click": "blueman-manager",
+		
+	},
+	"network": {
+		"format-ethernet": " {ipaddr}",
+		"format-wifi": " {ipaddr}",
+		"format-disconnected": " {ipaddr}",
+	},
+    "idle_inhibitor": {
+        "format": "{icon}",
+        "tooltip": true,
+        "format-icons": {
+            "activated": "",
+            "deactivated": ""
+        },
+        "on-click": "~/dotfiles/hyprland/scripts/toggle_idle.sh"        
+    },
+	"tray": {
+		"icon-size": 24,
+		"spacing": 8
+	},
 	"custom/chevron": {
 		"format": "",
 		"interval": "once",
+		"tooltip": false
+	},
+	"custom/exit": {
+		"format": "",
+		"on-click": "wlogout",
 		"tooltip": false
 	}
 }

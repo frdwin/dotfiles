@@ -48,6 +48,10 @@ window#waybar {
 	opacity: 0.6;
 }
 
+#workspaces button.urgent {
+	border-bottom: 3px solid @bg_visual;
+}
+
 /* Chevron */
 
 #custom-chevron {
@@ -65,6 +69,7 @@ window#waybar {
 window#waybar.empty #window {
     background-color: transparent;
 }
+
 
 /* Clock */
 
@@ -122,7 +127,7 @@ window#waybar.empty #window {
     margin: 10px 0px;
 }
 
-#bluetooth.off {
+#bluetooth.off, #bluetooth.disabled {
 	border-bottom: 3px solid @bg_visual;
 }
 
@@ -132,15 +137,13 @@ window#waybar.empty #window {
  #idle_inhibitor {
     margin: 10px 10px 10px 0px;
     padding: 2px 10px 0px 10px;
-    /*background-color: alpha(@bg_visual, 0.6);*/
     color: @fg;
-	/*border-radius: 8px;*/
-	border-bottom: 3px solid @bg_visual;
+	border-bottom: 3px solid @bg_green;
 }
 
 #idle_inhibitor.activated {
     color: @fg;
-	border-bottom: 3px solid @bg_green;
+	border-bottom: 3px solid @bg_visual;
 }
 
 /* Tray */
