@@ -1,0 +1,41 @@
+// Waybar Config
+// Frederico Winter (2024)
+// >_ fwinter
+
+
+{
+    // Position
+    "layer": "top",
+    "position": "top",
+    "margin-top": 0,
+    "margin-bottom": 0,
+    "margin-left": 0,
+    "margin-right": 0,    
+    "spacing": 0,
+
+    // Load Modules
+    //"include": ["~/dotfiles/waybar/themes/starter/modules.json"],
+
+    // Left
+    "modules-left": [
+        "hyprland/workspaces",
+		"hyprland/window"	
+    ],
+
+    // Center
+    "modules-center": [
+		"clock"
+    ],
+
+    // Right    
+    "modules-right": [
+        "pulseaudio",
+        "bluetooth",
+        "network",
+        "group/hardware",
+        "custom/cliphist",
+        "idle_inhibitor",
+        "tray",
+    ],
+
+}

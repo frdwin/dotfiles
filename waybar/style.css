@@ -1,0 +1,185 @@
+/* Waybar Style
+ * Frederico Winter (2024)
+ * >_ fwinter
+ */
+
+/* Variables */
+  @import '/home/fwinter/dotfiles/waybar/themes/everforest.css';
+
+/* General */
+
+* {
+    font-family: "JetBrains Mono", FontAwesome, sans-serif;
+    font-size: 16;
+    font-weight: 600;
+    font-style: normal;
+    border: none;
+    border-radius: 0px;
+}
+
+window#waybar {
+    background-color: @bg_dim;
+    transition-property: background-color;
+    transition-duration: .5s;
+	background-color: alpha(@bg_dim, 0.1);
+}
+
+/* Workspaces */
+
+#workspaces button {
+    color: @fg;
+    padding: 0px 5px;
+    margin: 0px 0px;
+    transition: all 0.2s ease-in-out;
+    min-width: 30px;
+}
+
+#workspaces button.active {
+    color: @bg2;
+    background: @fg_green;
+    transition: all 0.2s ease-in-out;
+	opacity: 1.0;
+}
+
+#workspaces button:hover {
+    color: @fg;
+    background: @bg_dim;
+    transition: all 0.2s ease-in-out;
+	opacity: 0.6;
+}
+
+/* Window title */
+
+#window {
+	color: @fg_orange;
+    margin-left: 20px;
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+/* Clock */
+
+#clock {
+    background-color: alpha(@bg_green, 0.6);
+    color: @fg;
+    border-radius: 8px;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 15px 10px 0px;
+}
+
+/* Audio */
+ 
+#pulseaudio {
+    color: @fg;
+    padding: 2px 10px 0px 10px;
+    margin: 10px;
+	border-bottom: 3px solid @bg_green;
+}
+
+#pulseaudio.muted {
+    color: @fg;
+	border-bottom: 3px solid @bg_visual;
+}
+
+/* Network */
+
+#network {
+    color: @fg;
+    padding: 2px 10px 0px 10px;
+    margin: 10px;
+	border-bottom: 3px solid @bg_green;
+}
+
+#network.ethernet {
+    color: @fg;
+	border-bottom: 3px solid @bg_green;
+}
+
+#network.wifi {
+    color: @fg;
+	border-bottom: 3px solid @bg_green;
+}
+
+#network.disconnected {
+	border-bottom: 3px solid @bg_visual;
+}
+
+/* Bluetooth */
+
+ #bluetooth, #bluetooth.on, #bluetooth.connected {
+	border-bottom: 3px solid @bg_green;
+    color: @fg;
+    padding: 2px 10px 0px 10px;
+    margin: 10px 0px;
+}
+
+#bluetooth.off {
+	border-bottom: 3px solid @bg_visual;
+}
+
+
+/* Idle inhibitor */
+
+ #idle_inhibitor {
+    margin: 10px 10px 10px 0px;
+    padding: 2px 10px 0px 10px;
+    /*background-color: alpha(@bg_visual, 0.6);*/
+    color: @fg;
+	/*border-radius: 8px;*/
+	border-bottom: 3px solid @bg_visual;
+}
+
+#idle_inhibitor.activated {
+    color: @fg;
+	border-bottom: 3px solid @bg_green;
+}
+
+/* Tray */
+
+#tray {
+    background-color: transparent;
+    margin: 10px 0px;
+    padding: 2px 10px 0px 10px;
+	border-radius: 8px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+label:focus {
+    background-color: alpha(@color2, 0.5);
+}
+
+/* Tooltip */
+
+tooltip {
+    border-radius: 10px;
+    background-color: alpha(@bg_dim, 0.6);
+    opacity: 0.8;
+    padding: 20px;
+    margin: 0px;
+}
+
+tooltip label {
+    color: @fg;
+}
+
+/* -----------------------------------------------------
+ * Modules
+ * ----------------------------------------------------- */
+
+.modules-left > widget:first-child > #workspaces {
+    margin-left: 0px;
+}
+
+.modules-right > widget:last-child > #workspaces {
+    margin-right: 0px;
+}
+
