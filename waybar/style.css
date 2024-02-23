@@ -167,6 +167,13 @@ label:focus {
     background-color: alpha(@color2, 0.5);
 }
 
+/* Exit */
+
+#custom-exit {
+	color: alpha(@fg_red, 0.6);
+	margin-right: 20px;
+}
+
 /* Tooltip */
 
 tooltip {

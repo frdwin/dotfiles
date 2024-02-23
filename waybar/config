@@ -33,10 +33,9 @@
         "pulseaudio",
         "bluetooth",
         "network",
-        "group/hardware",
-        "custom/cliphist",
         "idle_inhibitor",
         "tray",
+		"custom/exit"
     ],
 
 }
