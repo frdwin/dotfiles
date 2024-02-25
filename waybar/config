@@ -20,7 +20,7 @@
     "modules-left": [
         "hyprland/workspaces",
 		"custom/chevron",
-		"hyprland/window"	
+		"group/shortcuts"
     ],
 
     // Center

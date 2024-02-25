@@ -49,13 +49,29 @@
 	},
 	"custom/chevron": {
 		"format": "",
-		"on-click": "~/dotfiles/hyprland/scripts/chwall.sh",
 		"tooltip": false
 	},
 	"custom/exit": {
 		"format": "",
 		"on-click": "wlogout",
 		"tooltip": false
+	},
+	"custom/vms": {
+		"format": "",
+		"on-click": "~/dotfiles/hyprland/scripts/startvm.sh",
+		"tooltip": false
+	},
+	"custom/wp": {
+		"format": "",
+		"on-click": "~/dotfiles/hyprland/scripts/chwall.sh",
+		"tooltip": false
+	},
+	"group/shortcuts": {
+		"orientation": "horizontal",
+		"modules": [
+			"custom/wp",
+			"custom/vms"
+		]
 	}
 }
 
