@@ -1,3 +1,3 @@
 # Bash prompt
-#
-[ -e "/usr/local/bin/starship" ] && eval "$(starship init bash)"
+
+[ -e "/usr/bin/starship" ] && eval "$(starship init bash)"

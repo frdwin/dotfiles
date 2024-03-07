@@ -5,8 +5,25 @@ if [ -f ~/.bashrc ]; then
 	. ~/.bashrc
 fi
 
-# User specific environment and startup programs
-#
-# Fix Alacritty title bar
-export WINIT_UNIX_BACKEND=x11
-export PATH="$HOME/.cargo/bin:$PATH"
+export QT_QPA_PLATFORM=wayland
+export MOZ_ENABLE_WAYLAND=1
+export MOZ_WEBRENDER=1
+export XDG_SESSION_TYPE=wayland
+export XDG_CURRENT_DESKTOP=river
+#export XKB_DEFAULT_LAYOUT="us-intl"
+export EDITOR="nvim"
+export VISUAL="nvim"
+export TERMINAL="wezterm-gui"
+
+# Start graphical environment
+if [ "$(tty)" = "/dev/tty1" ] ; then
+    if test -z "${XDG_RUNTIME_DIR}"; then
+		export XDG_RUNTIME_DIR=/tmp/"$(id -u)"-runtime-dir
+		if ! test -d "${XDG_RUNTIME_DIR}"; then
+			mkdir "${XDG_RUNTIME_DIR}"
+			chmod 0700 "${XDG_RUNTIME_DIR}"
+		fi
+    fi
+    pkill -u "${USER}" -x pipewire\|wireplumber 1>/dev/null 2>&1
+    exec dbus-run-session -- river
+fi

@@ -18,7 +18,7 @@
 
     // Left
     "modules-left": [
-        "hyprland/workspaces",
+        "river/tags",
 		"custom/chevron",
 		"group/shortcuts"
     ],

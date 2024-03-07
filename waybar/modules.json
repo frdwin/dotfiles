@@ -13,6 +13,9 @@
 		"format": "{}",
 		"separate-outputs": true
 	},
+	"river/tags": {
+		"num-tags": 5
+	},
 	"pulseaudio": {
 		"format": "{icon} {volume}%",
 		"format-muted": "{icon} muted",
@@ -26,22 +29,21 @@
 		"format-on": " {num_connections} {status}",
 		"format-off": " {status}",
 		"interval": 30,
-		"on-click": "blueman-manager",
-		
+		"on-click": "blueman-manager"
 	},
 	"network": {
 		"format-ethernet": " {ipaddr}",
 		"format-wifi": " {ipaddr}",
-		"format-disconnected": " {ipaddr}",
+		"format-disconnected": " {ipaddr}"
 	},
-    "idle_inhibitor": {
+	"idle_inhibitor": {
         "format": "{icon}",
         "tooltip": true,
         "format-icons": {
             "activated": "",
             "deactivated": ""
         },
-        "on-click": "~/dotfiles/hyprland/scripts/toggle_idle.sh"
+        "on-click": "~/bin/toggle_idle.sh"
     },
 	"tray": {
 		"icon-size": 24,
@@ -58,12 +60,12 @@
 	},
 	"custom/vms": {
 		"format": "",
-		"on-click": "~/dotfiles/hyprland/scripts/startvm.sh",
+		"on-click": "~/bin/startvm.sh",
 		"tooltip": false
 	},
 	"custom/wp": {
 		"format": "",
-		"on-click": "~/dotfiles/hyprland/scripts/chwall.sh",
+		"on-click": "~/bin/chwall.sh",
 		"tooltip": false
 	},
 	"group/shortcuts": {

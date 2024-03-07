@@ -14,8 +14,4 @@ alias cat='bat --theme "gruvbox-dark"'
 #
 alias mv='mv -v'
 alias rm='rm -v'
-alias sudo='sudo '
-
-# Cybersec
-#
-alias rustscan='docker run -it --rm --name rustscan rustscan/rustscan'
+alias sudo='doas '
